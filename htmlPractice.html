@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--Everything in style affects the whole page-->
+    <!--Everything in style affects the whole page (CSS)-->
 <style>
     body {background-color:papayawhip;}
-    h1 {color:green;}
-    p {color:blue;}
+    h1 {color:dimgray;}
+    /*p {color:blue;}*/
     table, th, td {
         border: 1px solid black;
         /*border-collapse: collapse;*/ /*Collapses the border for tables*/
@@ -14,16 +14,24 @@
         padding: 15px; Adds padding to individual cells
     }*/
     /*Added classes to the style element*/
+
     .testClass {
-        color: green;
+        color:crimson;
         background-color: aqua;
     }
+
     .testClass2 {
         background-color: azure;
         color: black;
         border: 5px solid gray;
         margin: 5px; /*Padding for outside the element*/
         padding: 10px; /*Padding for inside the element*/
+    }
+    
+    .formatTest {
+        border: 2px solid black;
+        margin: 15px; /*Padding for outside the element*/
+        padding: 15px; /*Padding for inside the element*/
     }
 </style>
 
@@ -133,7 +141,7 @@
 
     <h1>Day 5</h1>
     <!--Calls the class created in the head-->
-    <div class="testClass">
+    <div class="testClass formatTest">
         <h2>Testing Header</h2>
         <p>Testing paragraph</p>
     </div>
