@@ -16,6 +16,26 @@
             
         }
 
+          /*Added classes to the style element*/
+        .testClass {
+            color:crimson;
+            background-color: aqua;
+        }
+
+        .testClass2 {
+            background-color: azure;
+            color: black;
+            border: 5px solid gray;
+            margin: 5px; /*Padding for outside the element*/
+            padding: 10px; /*Padding for inside the element*/
+        }
+        
+        .formatTest {
+            border: 2px solid black;
+            margin: 15px; /*Padding for outside the element*/
+            padding: 15px; /*Padding for inside the element*/
+        }
+
         /* Unused class
         .line {
             width:33%;
@@ -30,7 +50,7 @@
 <body>
     <!--Top page Nav bar (w/ links)-->
     <div class="styleSet">
-        <h1><a href='#D1'>Day 1</a> <a href='#D2'>Day 2</a> <a href='#D3'>Day 3</a> <a href='#D4'>Day 4</a> <a href='#D5'>Day 5</a></h1>
+        <h1><a href='#D1'>Day 1</a> <a href='#D2'>Day 2</a> <a href='#D3'>Day 3</a> <a href='#D4'>Day 4</a> <a href='#D5'>Day 5</a> <a href='#D6'>Day 6</a></h1>
     </div>
 
     <!--Daily sections-->
@@ -44,17 +64,106 @@
             such as H<sup>2</sup>O or X<sub>2</sub>.
         </p>
     <hr>
+
     <h2 id="D2">Day 2</h1>
-    <p>Test text</p>
+    <pre>
+        Using the element "pre" preserves the layout of how the text is formatted in the ide.
+        Like this, it made a new line without me using the "br" element.
+    </pre>
+
+    <p>As mentioned yesterday, there are different styles. They use CSS, although I'm not<br>
+    Familiar with that coding language just yet. an example from <a href="https://www.w3schools.com">w3schools</a> 
+    <br>shows you can add different colors to text or even the background of the webpage. As can be shown</p>
+    <p style="background-color:orange;"> Testing out the background color for the paragraph text<br>
+    with multiple lines as well. </p>
+    
+    <!--Added a border around the paragraph text-->
+    <p style="border: 2px solid DodgerBlue;">Testing the borders as well with HTML</p>
     <hr>
+
     <h2 id="D3">Day 3</h1>
-    <p>Test text</p>
+
+     <!--Table format-->
+     <p>Making a table</p>
+     <table>
+ 
+         <tr>
+             <th>Name</th>
+             <th>Age</th>
+             <th>weight</th>
+         </tr>
+ 
+         <tr>
+             <td>Jacob</td>
+             <td>32</td>
+             <td>129</td>
+         </tr>
+         
+         <tr>
+             <td>Ben D.</td>
+             <td>69</td>
+             <td>212</td>
+         </tr>
+ 
+         <tr>
+             <td>Earl</td>
+             <td>27</td>
+             <td>183</td>
+         </tr>
+     </table>
     <hr>
+
     <h2 id="D4">Day 4</h1>
-    <p>Test text</p>
+    <p>You can make lists in HTML, such as:</p>
+    <p>Ingredients for something random</p>
+    
+    <!--Unordered list-->
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Suger</li>
+        <li>Butter</li>
+    </ul>
+    <br>
+
+    <!--Ordered List-->
+    <ol>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Suger</li>
+        <li>Butter</li>
+    </ol>
+
+    <p>Learning about block level elements (div)<br>
+    div elements are mostly used as containors for inline elements</p>
+
+    <!--Example testing div-->
+    <div style="background-color: black;color: orange;">
+    
+        <h2>Test Heading for the div element</h2>
+        <p>Test paragragh for the div element.</p>
+        <p>Instead of adding seperate elements for styling and formatting, they can be set in the div element<br>
+        For some reason the paragraph element adapted the default color I've assigned.
+        </p>
+    
+    </div>
     <hr>
+
     <h2 id="D5">Day 5</h1>
-    <p>Test text</p>
+    <!--Calls the class created in the head-->
+    <div class="testClass formatTest">
+        <h2>Testing Header</h2>
+        <p>Testing paragraph</p>
+    </div>
+
+    <div class="testClass2">
+        <h2>Testing the other custom class</h2>
+        <p>Testing the format and look of the whole "element"</p>
+    </div>
+    <hr>
+
+    <h2 id="D6">Day 6</h2>
+    <p>Created a psuedo website that will showcase my work in a more organized, and readable manner</p>
 
 </body>
 </html>
